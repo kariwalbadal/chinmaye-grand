@@ -27,8 +27,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeP2Xz5c.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/jost/v20/92zatBhPNqw73oTd4jQmfxI.woff2">
-  <link rel="preload" as="image" fetchpriority="high" href="assets/img/gate-day.jpg">
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="preload" as="image" fetchpriority="high" href="assets/img/hall-interior.jpg">
+  <link rel="stylesheet" href="css/site.css?v=2">
 
   <script type="application/ld+json">
 {
@@ -84,8 +84,9 @@
     <nav class="main-nav" aria-label="Primary">
       <a href="#arrival">The Arrival</a>
       <a href="#hall">The Great Hall</a>
+      <a href="#celebrations">Celebrations</a>
       <a href="#opening">Opening</a>
-      <a href="https://chinmaye.in/">All Properties</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="header-actions">
       <button class="btn btn-gold btn-small js-book" type="button" data-purpose="event">Enquire</button>
@@ -99,11 +100,13 @@
     <nav aria-label="Menu">
       <a href="#arrival"><small>Nº 01</small>The Arrival</a>
       <a href="#hall"><small>Nº 02</small>The Great Hall</a>
-      <a href="#opening"><small>Nº 03</small>Opening</a>
+      <a href="#celebrations"><small>Nº 03</small>Celebrations</a>
+      <a href="#opening"><small>Nº 04</small>Opening</a>
+      <a href="#contact"><small>Nº 05</small>Contact</a>
     </nav>
     <nav class="menu-properties" aria-label="Other properties">
       <a href="https://chinmaye.in/">Chinmaye Hotels</a>
-      <a href="https://inn.chinmaye.in/">Hotel Chinmaye Inn</a>
+      <a href="https://chinmaye.in/">Hotel Chinmaye Inn</a>
       <a href="https://chinmaye.in/deoghar/">Chinmaye Deoghar</a>
     </nav>
     <div class="menu-contact">
@@ -118,7 +121,10 @@
     <section class="hero" aria-label="The Chinmaye Grand">
       <p class="hero-ribbon">Opening soon · Bhagalpur</p>
       <div class="hero-slides" aria-hidden="true">
-        <img class="hero-slide s1" src="assets/img/gate-day.jpg" sizes="100vw" alt="" fetchpriority="high" decoding="async" style="object-position: center 55%;">
+        <img class="hero-slide s1" src="assets/img/hall-interior.jpg" sizes="100vw" alt="" fetchpriority="high" decoding="async" style="object-position: center 60%;">
+        <!-- slides 2-3 load after window.load so they never compete with the LCP image -->
+        <img class="hero-slide s2" data-src="assets/img/lawn-wedding.jpg" sizes="100vw" alt="" decoding="async">
+        <img class="hero-slide s3" data-src="assets/img/gate-night.jpg" sizes="100vw" alt="" decoding="async">
       </div>
       <div class="hero-veil" aria-hidden="true"></div>
       <div class="hero-content">
@@ -142,7 +148,7 @@
     <section class="chapter address" id="arrival">
       <div class="wrap split">
         <figure class="split-media" data-reveal>
-          <span class="media-frame"><img src="assets/img/gate-night.jpg" alt="The entrance gate of The Chinmaye Grand at night — columns lit in warm gold" loading="lazy" decoding="async" style="aspect-ratio: 4/5; object-position: center 40%;"></span>
+          <span class="media-frame"><img src="assets/img/gate-night.jpg" alt="The entrance gate of The Chinmaye Grand at night — both pillars lit in warm gold" loading="lazy" decoding="async"></span>
           <figcaption>The gate, after dark</figcaption>
         </figure>
         <div class="split-copy">
@@ -153,7 +159,8 @@
           <div class="rule" data-reveal><span class="rule-diamond" aria-hidden="true"></span></div>
           <dl class="stats" data-reveal>
             <div><dt>2<span>nd</span></dt><dd>Chinmaye address in Bhagalpur</dd></div>
-            <div><dt>Est.</dt><dd>garden banquet &amp; resort</dd></div>
+            <div><dt>1</dt><dd>walled garden estate</dd></div>
+            <div><dt>24×7</dt><dd>enquiry desk</dd></div>
           </dl>
         </div>
       </div>
@@ -165,67 +172,114 @@
         <header class="chapter-head">
           <p class="chapter-no" data-reveal>Nº 02 — The Great Hall</p>
           <h2 data-reveal>If it’s a wedding,<br><em>let it be this one.</em></h2>
-          <p class="chapter-lede" data-reveal>Crystal chandeliers over coffered ceilings, checkered marble underfoot, and a hall that swallows a full guest list whole — photographed on site, not rendered.</p>
+          <p class="chapter-lede" data-reveal>Crystal chandeliers over coffered ceilings, checkered marble underfoot, hand-painted walls all around — photographed on site, not rendered.</p>
         </header>
 
-        <div class="split menu-split">
-          <div class="split-copy">
-            <figure class="split-media" data-reveal style="margin-bottom: 28px;">
-              <span class="media-frame"><img src="assets/img/hall-interior.jpg" alt="The great hall of The Chinmaye Grand — chandeliers over checkered marble, tables dressed" loading="lazy" decoding="async" style="aspect-ratio: 4/5; object-position: center 60%;"></span>
-              <figcaption>The great hall, August 2026</figcaption>
-            </figure>
-            <h3 data-reveal>Built, not promised</h3>
-            <p data-reveal>These are photographs of the estate as it stands — the hall dressed, the buffet line in marble and copper, the gardens already hosting their first evenings.</p>
-            <div class="cta-row" data-reveal>
-              <button class="btn btn-gold js-book" type="button" data-purpose="event">Hold a 2026–27 date</button>
-            </div>
-          </div>
-          <figure class="video-card" data-reveal>
-            <img src="assets/img/chandelier.jpg" alt="Brass and crystal chandelier detail in the great hall" loading="lazy" decoding="async">
-            <p class="video-note">Brass &amp; crystal · hall detail</p>
-          </figure>
+        <div class="maya-gallery">
+          <figure class="maya-lead" data-reveal><img src="assets/img/hall-interior.jpg" alt="The great hall of The Chinmaye Grand — chandeliers over checkered marble, tables dressed" loading="lazy" decoding="async"></figure>
+          <figure data-reveal><img src="assets/img/chandelier.jpg" alt="Brass and crystal chandelier detail in the great hall" loading="lazy" decoding="async"></figure>
+          <figure data-reveal><img src="assets/img/buffet-counters.jpg" alt="Marble-topped buffet counters with copper and jaali detailing" loading="lazy" decoding="async"></figure>
+          <figure data-reveal><img src="assets/img/dining-tables.jpg" alt="The dining room — printed tabletops, leather booths and rattan lights" loading="lazy" decoding="async"></figure>
         </div>
 
-        <div class="split" style="margin-top: 48px;">
-          <figure class="split-media" data-reveal>
-            <span class="media-frame"><img src="assets/img/buffet-counters.jpg" alt="Marble-topped buffet counters with copper and jaali detailing along the glass wall" loading="lazy" decoding="async" style="aspect-ratio: 4/3;"></span>
-            <figcaption>The buffet line — marble, copper, jaali</figcaption>
-          </figure>
-          <figure class="split-media" data-reveal>
-            <span class="media-frame"><img src="assets/img/dining-tables.jpg" alt="The dining room — printed tabletops, leather booths and rattan lights" loading="lazy" decoding="async" style="aspect-ratio: 4/3;"></span>
-            <figcaption>The dining room</figcaption>
-          </figure>
+        <div class="halls">
+          <article class="hall" data-reveal>
+            <h3>The Great Hall</h3><p class="hall-meta">Weddings &amp; receptions · Air-conditioned</p>
+            <p class="hall-desc">Chandeliers, coffered ceilings and a marble floor that takes a full guest list — the centrepiece of the estate.</p>
+          </article>
+          <article class="hall" data-reveal>
+            <h3>The Glass Pavilion</h3><p class="hall-meta">Conventions &amp; corporate days</p>
+            <p class="hall-desc">A glass-walled hall facing the lawns — daylight for conferences, lamplight for sangeet nights.</p>
+          </article>
+          <article class="hall" data-reveal>
+            <h3>The Lawns</h3><p class="hall-meta">Open-air · Garden ceremonies</p>
+            <p class="hall-desc">Lawns ringed by palms and draped pergolas — baraat, phere and fireworks under the open sky.</p>
+          </article>
+          <article class="hall" data-reveal>
+            <h3>The Dining Room</h3><p class="hall-meta">In-house kitchen · Buffet line</p>
+            <p class="hall-desc">A marble-and-copper buffet line and a dining room of its own — the khaana gets its stage too.</p>
+          </article>
+        </div>
+        <div class="cta-row center" data-reveal>
+          <button class="btn btn-gold js-book" type="button" data-purpose="event">Hold a 2026–27 date</button>
         </div>
       </div>
     </section>
 
-    <!-- ======================= Nº 03 · OPENING ======================= -->
+    <!-- ======================= Nº 03 · CELEBRATIONS ======================= -->
+    <section class="chapter seasons" id="celebrations" aria-label="Celebrations and seasons">
+      <div class="wrap">
+        <p class="chapter-no" data-reveal>Nº 03 — Celebrations</p>
+        <h2 data-reveal>Every season has<br><em>a reason to book it.</em></h2>
+        <p class="chapter-lede" data-reveal>Wedding season fills first. Tell us the occasion — shaadi, sangeet, Diwali party or a corporate day — and the team plans it end to end.</p>
+      </div>
+      <div class="season-track" data-reveal>
+        <a class="season-card js-book-link" href="#" data-purpose="event" data-room="Wedding season date">
+          <img src="assets/img/lawn-wedding.jpg" alt="The lawns at dusk, dressed with draped pergolas and fairy lights" loading="lazy" decoding="async">
+          <span><small>November — February</small>Wedding season on the lawns</span>
+        </a>
+        <a class="season-card js-book-link" href="#" data-purpose="event" data-room="Diwali booking">
+          <img src="assets/img/gate-night.jpg" alt="The gate pillars glowing warm at night" loading="lazy" decoding="async">
+          <span><small>October — November</small>Diwali at the Grand</span>
+        </a>
+        <a class="season-card js-book-link" href="#" data-purpose="event" data-room="Corporate day">
+          <img src="assets/img/facade-glass.jpg" alt="The glass-walled convention pavilion of The Chinmaye Grand" loading="lazy" decoding="async">
+          <span><small>Year-round</small>Conventions &amp; corporate days</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================= Nº 04 · OPENING ======================= -->
     <section class="chapter maya" id="opening">
       <div class="wrap">
         <header class="chapter-head">
-          <p class="chapter-no" data-reveal>Nº 03 — Opening</p>
+          <p class="chapter-no" data-reveal>Nº 04 — Opening</p>
           <h2 data-reveal>You first.<br><em>Literally.</em></h2>
           <p class="chapter-lede" data-reveal>Opening dates are being finalised. Tell us your occasion and we’ll hold the conversation — first enquiries get first pick of the calendar. Online booking opens here the day the doors do.</p>
         </header>
-        <div class="split" style="margin-bottom: 48px;">
-          <figure class="split-media" data-reveal>
-            <span class="media-frame"><img src="assets/img/lawn-wedding.jpg" alt="The lawns at dusk — draped pergolas and fairy lights ready for a wedding evening" loading="lazy" decoding="async" style="aspect-ratio: 4/3;"></span>
-            <figcaption>The lawns, dressed for an evening</figcaption>
-          </figure>
-          <figure class="split-media" data-reveal>
-            <span class="media-frame"><img src="assets/img/facade-glass.jpg" alt="The glass-walled convention hall of The Chinmaye Grand facing the lawns" loading="lazy" decoding="async" style="aspect-ratio: 4/3;"></span>
-            <figcaption>The glass hall, facing the lawns</figcaption>
-          </figure>
-        </div>
         <ul class="maya-points" data-reveal>
           <li>Garden weddings &amp; receptions</li>
           <li>Sangeet &amp; haldi lawns</li>
           <li>Conventions &amp; corporate days</li>
           <li>Resort stays — details soon</li>
         </ul>
+        <div class="amenities" data-reveal>
+          <h3>Everything, thought through</h3>
+          <ul>
+            <li>Walled garden estate</li><li>Crystal-lit great hall</li><li>Glass convention pavilion</li>
+            <li>In-house dining &amp; buffet line</li><li>Draped pergola lawns</li><li>On-site parking</li>
+            <li>Air-conditioned halls</li><li>Event planning team</li><li>Resort rooms — coming</li>
+          </ul>
+        </div>
         <div class="cta-row center" data-reveal>
           <button class="btn btn-wine js-book" type="button" data-purpose="event">Plan your event</button>
         </div>
+      </div>
+    </section>
+
+    <!-- ======================= Nº 05 · CONTACT ======================= -->
+    <section class="chapter contact" id="contact">
+      <div class="wrap split">
+        <div class="split-copy">
+          <p class="chapter-no" data-reveal>Nº 05 — Contact</p>
+          <h2 data-reveal>Come see it<br><em>for yourself.</em></h2>
+          <address data-reveal>
+            The Chinmaye Grand<br>
+            Sarvesh Royal Garden,<br>
+            Bhagalpur, Bihar
+          </address>
+          <ul class="contact-links" data-reveal>
+            <li class="on-mobile"><a href="tel:+918877222233">+91 88772 22233 <small>tap to call</small></a></li>
+            <li class="on-desktop"><a href="#" class="js-book-link" data-purpose="event">Send an enquiry <small>+91 88772 22233 — dial from a phone</small></a></li>
+            <li><a href="https://wa.me/918877222233?text=Hello!%20The%20Chinmaye%20Grand%20—" rel="noopener">WhatsApp us <small>replies fast</small></a></li>
+            <li><a href="mailto:info@chinmaye.in">info@chinmaye.in <small>email us</small></a></li>
+            <li><a href="https://www.instagram.com/chinmayeinn" rel="noopener">@chinmayeinn <small>on Instagram</small></a></li>
+          </ul>
+        </div>
+        <figure class="split-media" data-reveal>
+          <span class="media-frame"><img src="assets/img/facade-glass.jpg" alt="The glass hall of The Chinmaye Grand from the garden steps" loading="lazy" decoding="async"></span>
+          <figcaption>Site visits by appointment — call ahead</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -238,10 +292,11 @@
           <p class="chapter-lede" data-reveal>One promise, every address — see where else Chinmaye can host you.</p>
         </header>
         <div class="properties two">
-          <a class="property-card" href="https://inn.chinmaye.in/" data-reveal>
+          <!-- NOTE: points to today's live Inn at the apex; flip to https://chinmaye.in/ once that subdomain is live -->
+          <a class="property-card" href="https://chinmaye.in/" data-reveal>
             <figure class="property-media">
               <span class="property-status live">Open now</span>
-              <img src="assets/img/inn-facade-card.jpg" alt="Hotel Chinmaye Inn, Bhagalpur" loading="lazy" decoding="async">
+              <img src="assets/img/inn-facade-day.jpg" alt="Hotel Chinmaye Inn, Bhagalpur" loading="lazy" decoding="async">
             </figure>
             <div class="property-body">
               <p class="property-city">Bhagalpur · The Silk City</p>
@@ -273,7 +328,7 @@
     <div class="wrap footer-inner">
       <img class="footer-logo" src="assets/grand-logo-ivory.webp" alt="The Chinmaye Grand" width="180" height="253" loading="lazy" decoding="async" style="width: min(150px, 38vw);">
       <nav class="footer-nav" aria-label="Footer">
-        <a href="https://chinmaye.in/">Chinmaye Hotels</a><a href="https://inn.chinmaye.in/">Chinmaye Inn</a><a href="https://chinmaye.in/deoghar/">Deoghar</a>
+        <a href="#hall">The Great Hall</a><a href="#celebrations">Celebrations</a><a href="#contact">Contact</a><a href="https://chinmaye.in/">Chinmaye Hotels</a><a href="https://chinmaye.in/">Chinmaye Inn</a>
       </nav>
       <p class="footer-line">Sarvesh Royal Garden, Bhagalpur · +91 88772 22233 · info@chinmaye.in</p>
       <p class="footer-note">Opening soon — photography shows the estate at Sarvesh Royal Garden as it stands today</p>
